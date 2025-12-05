@@ -3,6 +3,9 @@
 # La imagen 'slim' es más ligera, pero necesitamos instalar Chrome manualmente o usar una imagen que ya tenga las librerías.
 FROM node:20-slim
 
+# Forzar a Node.js a usar IPv4 para evitar errores de conexión con Supabase (ENETUNREACH)
+ENV NODE_OPTIONS="--dns-result-order=ipv4first"
+
 # Instalar dependencias del sistema necesarias para Puppeteer
 RUN apt-get update \
   && apt-get install -y wget gnupg \
