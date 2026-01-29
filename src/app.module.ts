@@ -7,7 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 // import { User } from './auth/entities/user.entity'; <--- YA NO HACE FALTA IMPORTAR ESTO AQUÍ
 import { ScraperModule } from './scraper/scraper.module';
-import { ArribosModule } from './arribos/entities/arribos.module';
+import { ArribosModule } from './arribos/arribos.module';
 import { SettingsModule } from './settings/settings.module'; // <--- Importar
 
 @Module({

@@ -1,5 +1,5 @@
 import { Controller, Post, Body, Get, Param } from '@nestjs/common';
-import { ArribosService } from './entities/arribos.service';
+import { ArribosService } from './arribos.service';
 import { CargaBuzonesDto } from './dto/carga-buzones.dto';
 
 @Controller('arribos')
