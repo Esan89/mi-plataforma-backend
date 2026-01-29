@@ -1,0 +1,13 @@
+import { Entity, PrimaryColumn, Column } from 'typeorm';
+
+@Entity({ name: 'settings' })
+export class Setting {
+    @PrimaryColumn()
+    key: string;
+
+    @Column()
+    value: string;
+
+    @Column({ nullable: true })
+    description: string;
+}
